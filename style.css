@@ -1,11 +1,8 @@
-@font-face{
-    font-family: 'Montserrat-regular';
-    src: url(Montserrat/Montserrat-Medium.ttf);
-}
+
 
 html {
     height: 100%;
-    font-family: 'Montserrat-regular';
+    font-family: 'Montserrat', sans-serif;
 
    }
 
@@ -67,7 +64,7 @@ body {
     }
 
 #themes{
-    font-family: 'Montserrat-regular';
+    font-family: 'Montserrat', sans-serif;
     float: right;
     text-transform: uppercase;
     padding:3px;
