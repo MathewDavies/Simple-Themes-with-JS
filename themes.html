@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Themes Demonstration</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="toggle-container">
+           
+            <select id="themes" name="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="blue">Blue</option>
+            </select>
+        
+        <h1>Themes</h1>
+           
+           <!-- <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label> -->
+        </div>
+    
+        <p>This is a demonstration of how we can create themes using a selection box and some Javascript. The theme works by settings
+            the data attribute in css using javascript to take the value from the drop down menu.
+        </p>
+        <p>
+            I tend to be a little paranoid about compatibility so I appreciate that I use two things that aren't universally supported 
+            - the data attribute and the color variable. On <a href = "https://caniuse.com/"> caniuse.com </a> both attributes have 
+            around 98% support. I have put a default theme of light, although this still relies on css variables. 
+        </p>
+        <p>
+            The next logical step for this project would be to store user's preference and load the selected theme on the next visit. This could 
+            be done in several ways depending on the project. If the site doesn't have a login, using a cookie could be the easiest way to do this.
+            If the website is based on a login, then they will most likely have a database attached and session variables will be loaded into
+             each page. You could use one of these session variables to load the theme. 
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

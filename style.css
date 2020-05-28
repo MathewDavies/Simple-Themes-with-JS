@@ -1,0 +1,84 @@
+@font-face{
+    font-family: 'Montserrat-regular';
+    src: url(Montserrat/Montserrat-Medium.ttf);
+}
+
+html {
+    height: 100%;
+    font-family: 'Montserrat-regular';
+
+   }
+
+html{
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #333333;
+}
+
+html[data-theme='light']{
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #333333;
+}
+
+html[data-theme='dark'] {
+    --bg: #333333;
+    --bg-panel: #434343;
+    --color-headings: #3694FF;
+    --color-text: #B5B5B5;
+}
+
+html[data-theme='blue']{
+    --bg: rgb(64, 56, 175);
+    --bg-panel: rgb(236, 246, 250);
+    --color-headings: #0077FF;
+    --color-text: rgb(19, 19, 19);
+}
+
+
+body {
+    
+    background-color: var(--bg);
+}
+
+.container {
+    background-color: var(--bg-panel);
+    margin: 5em;
+    padding: 5em;
+    border-radius: 15px;
+
+    }
+ .container h1 {
+        margin: 0;
+        color: var(--color-headings);
+    }
+
+.container p {
+        color: var(--color-text);
+        
+        font-size: 1.1em;
+        line-height: 1.8em;
+        margin-top: 2em;
+    }
+    .container a{
+        color: var(--color-text);
+    }
+
+#themes{
+    font-family: 'Montserrat-regular';
+    float: right;
+    text-transform: uppercase;
+    padding:3px;
+    background-color: var(--bg-panel);
+    color: var(--color-text);
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
